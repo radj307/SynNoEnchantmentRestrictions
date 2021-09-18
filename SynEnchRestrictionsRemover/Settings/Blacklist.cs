@@ -20,7 +20,8 @@ namespace SynEnchRestrictionsRemover
         [SettingName("Mod Blacklist")]
         public List<ModKey> BlacklistMods = new()
         {
-
+            ModKey.FromNameAndExtension("Complete Alchemy & Cooking Overhaul.esp"),
+            ModKey.FromNameAndExtension("WayOfTheMonk.esp")
         };
 
         public bool IsBlacklisted(ModKey mod)
